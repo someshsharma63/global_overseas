@@ -63,7 +63,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: 'poppins'
+  font-family: 'poppins' !important
  
 }
 
@@ -2953,3 +2953,47 @@ margin-bottom: 20px;
     {
         text-align: justify;
       }
+
+      .footer a
+      {
+        color: #fff;
+      }
+
+      .footer a:hover
+      {
+        color: #feb900;
+      }
+
+     .contactInfo a,p 
+     {
+      color: #000 !important;
+     }
+     .footer-contact p
+     {
+        color: #fff !important;
+     }
+   
+
+     .mycontact p,a{
+      color: #000;
+      font-size: 16px;
+     }
+
+     .mycontact p
+     {
+      font-size: 16px !important;
+     }
+
+     .myfooter p
+     {
+      color: #fff !important;
+     }
+     .copyright p 
+     {
+      color: #fff !important;
+     }
+
+     .herosection p
+     {
+      color: #fff !important;
+     }
