@@ -3045,3 +3045,7 @@ margin-bottom: 20px;
       height: 100% !important;
       object-fit: cover;
     }
+
+    iframe {
+    width: 100%;
+}
