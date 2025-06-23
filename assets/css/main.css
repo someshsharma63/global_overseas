@@ -3049,3 +3049,7 @@ margin-bottom: 20px;
     iframe {
     width: 100%;
 }
+
+input.form-control {
+    margin: 20px 0px;
+}
