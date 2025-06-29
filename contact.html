@@ -174,7 +174,7 @@
         <div class="col-lg-4 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-               <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About us</a></li>
             <li><a href="./blog.html">Gallery</a></li>
             <li><a href="./product.html">Products</a></li>
@@ -231,3 +231,28 @@
 </body>
 
 </html>
+
+
+  <script>
+  document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent default form submission
+
+    // Get form values
+    const name = document.querySelector('[name="name"]').value;
+    const email = document.querySelector('[name="email"]').value;
+    const message = document.querySelector('[name="message"]').value;
+
+    // Format WhatsApp message
+    const fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+    // Replace with your WhatsApp number (with country code, no + sign)
+    const phoneNumber = "919024881021";
+
+    // WhatsApp API URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+  });
+
+</script>
